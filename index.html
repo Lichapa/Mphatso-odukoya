@@ -12,10 +12,6 @@
     <h1 id="title"> Survey form</h1>
     <p id="description"> Please take your time to fill this form correctly</p>
     <form id="survey-form" >
-<<<<<<< HEAD
-
-=======
->>>>>>> 14f07d126bfee0ef6e3b70294deee8cbbf384a5d
       <label for="name-label" id="name-label">Enter your name:</label>
       <input id="name" type="text" placeholder="Enter Your Name" name="Name" required /> <br>
 
@@ -23,19 +19,30 @@
       <input id="email" type="email" placeholder="Enter Your email" name="email" required /> <br>
 
       <label for="number-label" id="number-label">Enter your number:</label>
-<<<<<<< HEAD
       <input id="number" type="number" placeholder="Enter Your IDNumber"
-        name="number"  min="10" max="65" required />
+        name="number"  min="10" max="65" required /><br>
 
         <select id="dropdown" name="gender">
           <option value="male">Male</option>
           <option value="female">Female</option>
-        </select>
 
-=======
-      <input id="number" type="number" placeholder="Enter Your IDNumber" 
-        name="number"  min="10" max="65" required />
->>>>>>> 14f07d126bfee0ef6e3b70294deee8cbbf384a5d
+        </select> <br>
+      <label for="radio-title">Where do you live:</label> <br> 
+      <input type="radio" id="location" name="location" value="urban">
+      <label for="urban">urban</label><br>
+      <input type="radio" id="rural" name="location" value="rural">
+      <label for="rural">rural</label><br>
+      <input type="radio" id="other" name="location" value="other">
+      <label for="other">Other</label> <br>
+
+      <label for="radio-title">Mode of transport:</label> <br>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="none">
+    <label for="vehicle3"> I use public transport</label><br> 
+
     </form>
     <script  src="js/index.js"></script>
   </body>
