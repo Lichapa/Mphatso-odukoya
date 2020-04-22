@@ -12,9 +12,15 @@
     <h1 id="title"> Survey form</h1>
     <p id="description"> Please take your time to fill this form correctly</p>
     <form id="survey-form" >
-      <input id="name" type="text" placeholder="Enter Your Name" name="Name" required />
-      <input id="email" type="email" placeholder="Enter Your email" name="email" required />
-      <input id="number" type="number" placeholder="Enter Your IDNumber" name="number" required />
+      <label for="name-label" id="name-label">Enter your name:</label>
+      <input id="name" type="text" placeholder="Enter Your Name" name="Name" required /> <br>
+
+      <label for="email-label" id="email-label">Enter your email:</label>
+      <input id="email" type="email" placeholder="Enter Your email" name="email" required /> <br>
+
+      <label for="number-label" id="number-label">Enter your number:</label>
+      <input id="number" type="number" placeholder="Enter Your IDNumber" 
+        name="number"  min="10" max="65" required />
     </form>
     <script  src="js/index.js"></script>
   </body>
